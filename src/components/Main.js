@@ -10,21 +10,21 @@ const specialsData = [
   {
     img: greekSalad,
     title: "Greek Salad",
-    price: 12.99,
+    price: 230,
     description:
       "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.",
   },
   {
     img: bruschetta,
     title: "Bruschetta",
-    price: 5.99,
+    price: 78,
     description:
       "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.",
   },
   {
     img: LemonDessert,
     title: "Lemon Dessert",
-    price: 5.0,
+    price: 54,
     description:
       "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
   },

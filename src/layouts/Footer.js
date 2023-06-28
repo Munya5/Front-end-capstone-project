@@ -7,9 +7,9 @@ const Footer = () => {
       <nav>
         <h3>Contact Us</h3>
         <ul>
-          <li>Address: 123 Test Street</li>
-          <li>Email: order@littlelemon.com</li>
-          <li>Phone: 032 329 5733</li>
+          <li>Address: 123 Adderley Street</li>
+          <li>Email: little_lemon@gmail.com</li>
+          <li>Phone: +27818517826</li>
         </ul>
       </nav>
       <nav>
