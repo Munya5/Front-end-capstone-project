@@ -14,6 +14,22 @@ ul {
 li {
   font-weight: 600;
   font-size: 1rem;
+  position: relative; /* Add position relative for the pseudo-element */
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  bottom: -2px;
+  left: 0;
+  transition: width 0.3s ease; /* Add transition for smooth animation */
+}
+
+li:hover::after {
+  width: 100%; /* Expand the width on hover */
 }
 
 a {
@@ -22,3 +38,4 @@ a {
   text-decoration: none;
   color: #333;
 }
+
