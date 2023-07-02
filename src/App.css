@@ -1,3 +1,4 @@
+/* Global styles */
 *,
 *::before,
 *::after {
@@ -18,21 +19,26 @@ body,
   flex-direction: column;
 }
 
+/* Main content styles */
 main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10rem;
-  padding-top: 10rem;
+  gap: 5rem;
+  /* Reduced gap for smaller screens */
+  padding-top: 5rem;
+  /* Reduced padding for smaller screens */
 }
 
 main button {
   max-height: smaller;
 }
 
+/* Section styles */
 section {
   width: 100%;
-  padding: 0 15%;
+  padding: 0 10%;
+  /* Reduced padding for smaller screens */
 }
 
 h1 {
@@ -47,4 +53,44 @@ button {
   color: #333;
   border-radius: 20px;
   border: none;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+
+  /* Styles for screens with a maximum width of 768px (e.g., tablets and smaller) */
+  main {
+    gap: 3rem;
+    padding-top: 3rem;
+  }
+
+  section {
+    padding: 0 5%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  /* Styles for screens with a maximum width of 480px (e.g., mobile phones) */
+  main {
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  section {
+    padding: 0 2%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14pt;
+  }
 }
