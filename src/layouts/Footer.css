@@ -9,6 +9,7 @@ footer {
 footer {
   font-family: 'Karla', sans-serif;
 }
+
 footer ul,
 footer nav {
   flex-direction: column;

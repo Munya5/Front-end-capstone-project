@@ -1,14 +1,19 @@
-import React, { useContext, useState } from "react";
+import React, {
+  useContext,
+  useState
+} from "react";
 
 const FormContext = React.createContext();
 
-const FormProvider = ({ children }) => {
+const FormProvider = ({
+  children
+}) => {
   const [form, setForm] = useState({
     name: "",
     email: "",
     date: "",
     time: "",
-    guests: 1,
+    guests: 2,
     occasion: false,
     table: false,
     message: false,
@@ -18,15 +23,16 @@ const FormProvider = ({ children }) => {
     setForm(data);
   };
 
-  return (
-    <FormContext.Provider
-      value={{
+  return ( <
+    FormContext.Provider value = {
+      {
         form,
         setForm: setFormHandler,
-      }}
-    >
-      {children}
-    </FormContext.Provider>
+      }
+    } > {
+      children
+    } <
+    /FormContext.Provider>
   );
 };
 
