@@ -88,8 +88,12 @@ const useForm = () => {
       form.numberOfGuests
     ) {
       setFormValid(true);
+      console.log('munya')
     }
+    else console.log('not valid yet')
   }, [form]);
+
+
 
   const changeNameHandler = (e) => {
     dispatch({ type: ACTION_TYPES.NAME, payload: e.target.value });
@@ -126,13 +130,13 @@ const useForm = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    let response;
+    
 
-    if (isFormValid) {
-      response = submitAPI(form);
+   
+      submitAPI(form);
       formContext.setForm(form);
-    }
-    return response ? true : false;
+    
+    return true;
   };
 
   return {
