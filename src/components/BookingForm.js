@@ -104,8 +104,8 @@ const BookingForm = ({
         /option>
       ))
     } <
-    /select> <
-    /label> <
+    /select> < /
+    label > <
     /div> <
     div className = "column" >
     <
@@ -141,8 +141,8 @@ const BookingForm = ({
     option value = "" > None < /option> <
     option value = "birthday" > Birthday < /option> <
     option value = "engagement" > Engagement < /option> <
-    option value = "anniversary" > Anniversary < /option> <
-    /select> <
+    option value = "anniversary" > Anniversary < /option> < /
+    select > <
     /label> <
     label htmlFor = "table" >
     <
@@ -157,10 +157,10 @@ const BookingForm = ({
     <
     option value = "" > None < /option> <
     option value = "inside" > Inside < /option> <
-    option value = "outside" > Outside < /option> <
-    /select> <
-    /label> <
-    /div> <
+    option value = "outside" > Outside < /option> < /
+    select > <
+    /label> < /
+    div > <
     div className = "column" >
     <
     label htmlFor = "message" >
@@ -176,13 +176,14 @@ const BookingForm = ({
     id = "message"
     cols = "30"
     rows = "10" >
-    < /textarea> <
-    /label> <
+    <
+    /textarea> < /
+    label > <
     /div> <
     div className = "submit-container" >
     <
-    button type = "submit" > Make Reservation < /button> <
-    /div> <
+    button type = "submit" > Make Reservation < /button> < /
+    div > <
     /form>
   );
 };
